@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.Title {
+  background: #22c1c3;
+  padding: 1.5em;
+  height: 15%;
+  display: flex;
+
+  align-items: center;
+}
+#content {
+  height: 100%;
+}
+
+.titHead {
+  font-size: 2rem;
+  font-family: "Do Hyeon", monospace;
+  color: aliceblue;
+}
+.container {
+  display: flex;
+  height: 85%;
+}
+.left-section {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4em 0.5em;
+  background-color: aliceblue;
+  color: #22c1c3;
+  border-right: 0.2em solid skyblue;
+}
+.right-section {
+  background: aliceblue;
+  min-width: 75%;
+}
+.rightSecHead {
+  text-align: center;
+  font-family: "Do Hyeon", monospace;
+  color: #22c1c3;
+}
+.upper-body {
+  font-size: 1.4rem;
+}
+
+.left-secItem {
+  margin: 0.2em;
+  font-family: "Do Hyeon", monospace;
+}
+.lower-body {
+  margin-top: 0.4em;
+  font-family: "Do Hyeon", monospace;
+}
