@@ -1,0 +1,29 @@
+{
+  "name": "planner",
+  "version": "1.0.0",
+  "description": "A simple todolist project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "webpack",
+    "watch" : "webpack --watch"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJJ4032002/Planner.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "JJJ4032002",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJJ4032002/Planner/issues"
+  },
+  "homepage": "https://github.com/JJJ4032002/Planner#readme",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
