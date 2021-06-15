@@ -6,29 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planner</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
+
+    <div class="modal">
+        <div class="modal-container">
+            <h2 class="addProjHead">Add Project</h2>
+            <form class="myForm" action="">
+                <label class="projLabel" for="project">Project</label>
+                <br>
+                <input type="text" value="" id="project" required>
+                <br>
+
+                <button id="sub" type="submit" class="projBtn">Submit</button>
+                <button id="closeBtn" class="projBtn">Close</button>
+            </form>
+
+        </div>
+    </div>
  <div id="content"> 
     <nav class="Title">
         <h1 class="titHead">Planner</h1>
+         <div>
+            <i id="barIcon" class="fa fa-bars"></i> 
+         
+    </div>
     </nav>
       
    <div class="container">
        
        <div class="left-section">
            <div class="upper-body">
-           <p class="left-secItem">Inbox</p>
-           <p class="left-secItem">Important</p>
-           <p class="left-secItem">Planned</p>
+           <p class="left-secItem"> <span class="material-icons">inbox</span>Inbox</p>
+           <p class="left-secItem"><span class="material-icons">
+            info
+        </span>Important</p>
+           <p class="left-secItem"><span class="material-icons">
+            library_books
+        </span>Planned</p>
            </div>
+
            <div class="lower-body">
-               <h2>Projects</h2>
-               <div class="proj-items"><p>Project-No-1n</p></div>
+               <h2 class="lower-head">
+Projects<span id = "addIcon" class="material-icons">
+    add_circle_outline
+</span>
+</h2>
+          <div class="projItemCont">
+               
+    </div>
            </div>
 
        </div>
        <div class="right-section">
+           <div class="rightSecTitle"> 
             <h1 class="rightSecHead">To-dos - <span>Yay</span></h1>
+            <button class="task-btn">Add-Task</button>
+           </div>
+
+            <div class="tasks-container">
+                <div class="task-div"></div>
+                <div class="task-div"></div>
+                <div class="task-div"></div>
+                
+            </div>
             
        </div>
    </div>
