@@ -11,7 +11,9 @@ html {
   height: 100%;
   position: relative;
 }
-.modal {
+.modal,
+.modal-tasks,
+.modal-edit {
   display: none;
   z-index: 1;
   position: fixed;
@@ -23,7 +25,9 @@ html {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-container {
+.modal-container,
+.modalTaskContainer,
+.modalEditContainer {
   z-index: 2;
   position: fixed;
   top: 50%;
@@ -31,7 +35,7 @@ html {
   text-align: center;
   padding: 2em 2em;
   background-color: aliceblue;
-  max-width: 400px;
+  max-width: 500px;
   transform: translate(-50%, -50%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5em;
@@ -43,6 +47,7 @@ html {
   cursor: pointer;
   display: none;
 }
+
 .projBtn {
   margin: 0.7em 0.5em;
   padding: 0.4em 0.5em;
@@ -125,11 +130,16 @@ html {
 }
 
 .left-secItem {
-  display: flex;
+  display: inline-block;
   align-items: center;
   margin: 0.2em;
-
+  cursor: pointer;
   font-family: "Do Hyeon", monospace;
+}
+
+.upperBodyItems {
+  display: flex;
+  align-items: center;
 }
 
 .material-icons {
@@ -174,6 +184,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  cursor: pointer;
 }
 #project {
   padding: 0.5em;
@@ -193,10 +204,51 @@ html {
   cursor: pointer;
 }
 
+.task-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .rightSecHead {
   text-align: center;
   font-family: "Do Hyeon", monospace;
   color: #22c1c3;
+}
+
+.task-div {
+  margin: 0.5em auto;
+  width: 70%;
+  max-width: 500px;
+  background: #64e2e6;
+  padding: 1em;
+  font-family: "Do Hyeon", monospace;
+  color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.4em;
+}
+
+.visible-tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.invisible-tasks {
+  display: none;
+}
+
+.taskIcons {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.taskIcons:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  border-radius: 50%;
+  color: #64e2e6;
 }
 
 @media (max-width: 550px) {

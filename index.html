@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
 
 
@@ -27,56 +29,123 @@
 
         </div>
     </div>
- <div id="content"> 
-    <nav class="Title">
-        <h1 class="titHead">Planner</h1>
-         <div>
-            <i id="barIcon" class="fa fa-bars"></i> 
-         
+
+    <div class="modal-tasks">
+        <div class="modalTaskContainer">
+            <h2 class="addProjHead">Add Task</h2>
+            <form class="taskForm" action="">
+                <label class="projLabel" for="title">Add Title</label>
+                <br>
+                <input type="text" value="" id="title" required>
+                <br>
+                <label class="projLabel" for="desc">Add Description</label>
+                <br>
+                <input type="text" id="desc" required>
+                <br>
+                <label class="projLabel" for="date">Add Date</label>
+                <br>
+                <input type="Date" value="" id="date" required>
+                <br>
+                <label class="projLabel" for="priority">Priority</label>
+                <br>
+                <input type="text" id="priority" value="" required>
+                <br>
+                <button class="projBtn" id="taskSub" type="submit">Submit</button>
+
+                <button class="projBtn" id="taskCloseBtn">Close</button>
+            </form>
+        </div>
     </div>
-    </nav>
-      
-   <div class="container">
-       
-       <div class="left-section">
-           <div class="upper-body">
-           <p class="left-secItem"> <span class="material-icons">inbox</span>Inbox</p>
-           <p class="left-secItem"><span class="material-icons">
-            info
-        </span>Important</p>
-           <p class="left-secItem"><span class="material-icons">
-            library_books
-        </span>Planned</p>
-           </div>
 
-           <div class="lower-body">
-               <h2 class="lower-head">
-Projects<span id = "addIcon" class="material-icons">
-    add_circle_outline
-</span>
-</h2>
-          <div class="projItemCont">
-               
+    <div class="modal-edit">
+        <div class="modalEditContainer">
+            <h2 class="addProjHead">Edit Task</h2>
+            <form class="EditForm" action="">
+                <label class="projLabel" for="EditTitle">Add Title</label>
+                <br>
+                <input type="text" value="" id="EditTitle">
+                <br>
+                <label class="projLabel" for="EditDesc">Add Description</label>
+                <br>
+                <input type="text" id="EditDesc">
+                <br>
+                <label class="projLabel" for="EditDate">Add Date</label>
+                <br>
+                <input type="Date" value="" id="EditDate">
+                <br>
+                <label class="projLabel" for="EditPriority">Priority</label>
+                <br>
+                <input type="text" id="EditPriority" value="">
+                <br>
+                <button class="projBtn" id="editSub" type="submit">Submit</button>
+
+                <button class="projBtn" id="editCloseBtn">Close</button>
+            </form>
+        </div>
     </div>
-           </div>
+    <div id="content">
+        <nav class="Title">
+            <h1 class="titHead">Planner</h1>
+            <div>
+                <i id="barIcon" class="fa fa-bars"></i>
 
-       </div>
-       <div class="right-section">
-           <div class="rightSecTitle"> 
-            <h1 class="rightSecHead">To-dos - <span>Yay</span></h1>
-            <button class="task-btn">Add-Task</button>
-           </div>
-
-            <div class="tasks-container">
-                <div class="task-div"></div>
-                <div class="task-div"></div>
-                <div class="task-div"></div>
-                
             </div>
-            
-       </div>
-   </div>
-</div></div>
+        </nav>
+
+        <div class="container">
+
+            <div class="left-section">
+                <div class="upper-body">
+                    <div class="upperBodyItems">
+                        <span class="material-icons">inbox</span>
+                        <p class="left-secItem">Inbox</p>
+                    </div>
+
+                    <div class="upperBodyItems">
+                        <span class="material-icons">
+                            info
+                        </span>
+                        <p class="left-secItem">Important</p>
+                    </div>
+
+                    <div class="upperBodyItems">
+                        <span class="material-icons">
+                            library_books
+                        </span>
+                        <p class="left-secItem">Planned</p>
+
+                    </div>
+                </div>
+
+                <div class="lower-body">
+                    <h2 class="lower-head">
+                        Projects<span id="addIcon" class="material-icons">
+                            add_circle_outline
+                        </span>
+                    </h2>
+                    <div class="projItemCont">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-section">
+                <div class="rightSecTitle">
+                    <h1 class="rightSecHead">To-dos - <span class="rightSecSpan"></span></h1>
+                    <button class="task-btn">Add-Task</button>
+                </div>
+
+                <div class="tasks-container">
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
